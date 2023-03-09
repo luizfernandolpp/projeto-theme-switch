@@ -1,0 +1,89 @@
+@charset "UTF-8";
+
+:root {
+	--dark: #292C35;
+	--light: #F1F1F1;
+	--label: #111;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body, html{
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--light);
+    transition: background-color 0.3s;
+    transition-timing-function: ease;
+}
+
+main > div#label{
+    width: 240px;
+    height: 100px;
+    border-radius: 100px;
+    background-color: var(--label);
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+}
+
+main > div#label > div#button{
+    display: inline-block;
+    position: absolute;
+    left: 0%;
+    z-index: 1;
+    
+    width: 90px;
+    height: 90px;
+    margin: 5px;
+    
+    border-radius: 45px;
+    background-color: white;
+    
+    cursor: pointer;
+    transition: left 0.5s;
+    transition-timing-function: 0.3s;
+    
+    
+    
+}
+
+
+
+main > div#label > div#imgmoon{
+    display: inline-block;
+    
+    z-index: 0;
+    width: 90px;
+    height: 90px;
+    margin: 10px;
+}
+
+div#imgmoon > img{
+    width: 90px;
+    height: 90px;
+    padding-bottom: 10px;
+}
+
+main > div#label > div#imgsun{
+    display: inline-block;
+    position: absolute;
+    left: 55%;
+    z-index: 0;
+    width: 90px;
+    height: 90px;
+    margin: 10px;
+}
+
+div#imgsun > img{
+    width: 90px;
+    height: 90px;
+    padding-bottom: 10px;
+    
+}
